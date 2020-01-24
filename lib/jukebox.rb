@@ -21,9 +21,9 @@ end
 
 def play(array)
   puts "Please enter a song name or number:"
-  response = gets.strip
+  input = gets.strip
   song_with_nums = array.each_with_index.map {|song, i| [(i+1).to_s, song]}.flatten
-  choice = song_with_nums.find {|item| item == response}
+  choice = song_with_nums.find {|item| item == input}
   if choice.nil?
     puts "Invalid input, please try again."
     play(array)
@@ -46,5 +46,6 @@ end
 
 def run
   puts "Please enter a command:"
+   = gets.
   
 end
