@@ -26,7 +26,7 @@ def play(array)
   choice = song_with_nums.find {|item| item == input}
   if choice.nil?
     puts "Invalid input, please try again."
-    play(array)
+    #play(array)
   elsif choice.to_i == 0 #selection was made by songname
     puts "Playing #{choice}"
   else
