@@ -44,21 +44,21 @@ def exit_jukebox
   puts "Goodbye"
 end
 
-def run(songs)
+def run(array)
   puts "Please enter a command:"
   command = gets.strip
   case command
   when "help"
     help
   when "list"
-    list(songs)
+    list(array)
   when "play"
-    play(songs)
+    play(array)
   when "exit"
     exit_jukebox
     exit
   else
     puts "Invalid input, please try again."
   end
-  run
+  run(array)
 end
