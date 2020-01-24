@@ -33,8 +33,6 @@ def play(array)
     index = choice.to_i - 1
     song = array[index]
     puts "Playing #{song}"
-    
-
 end
 
 def list(array)
@@ -43,7 +41,7 @@ def list(array)
 end
 
 def exit_jukebox
-  
+  puts "Goodbye"
 end
 
 def run
