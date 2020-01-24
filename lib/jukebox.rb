@@ -33,6 +33,7 @@ def play(array)
     index = choice.to_i - 1
     song = array[index]
     puts "Playing #{song}"
+  end
 end
 
 def list(array)
